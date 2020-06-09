@@ -9,3 +9,4 @@ The basic mechatronics for the MoSoRo system consist of a microcontroller, DC mo
 - Four (4) maxon DC Motors (273687,1105182-05 Rev. E)*
 - Four (4) TOSHIBA Full-Bridge DC Motor Driver IC (TB6643KQ8)
 
+* These motors were purchased from eBay. However, the corresponding datasheets are propietary to the maxon company and we do not have access to them. We typically run these motors at about 15-20 V. 
