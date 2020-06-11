@@ -15,3 +15,4 @@ A basic circuit schematic is shown below:
 ![test](MoSoRo_Schematic.png)
 
 ### Code
+The basic code presented [here](neweuler.ino) enables open-loop control of a motor-tendon actuated robot by cycling through a predetermined input sequence (i.e. locomotion gait). 
