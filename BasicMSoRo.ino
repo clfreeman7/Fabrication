@@ -8,7 +8,11 @@ const int8_t motor[] ={3,4,6,7,9,10,11,12};
 const int8_t cycle1[]={2,5,8};
 const int8_t cycle2[]={0,2,15};
 // if you want to use more than 2 cycles make sure to  also add variables to 
-// define their lengths
+// define their lengths.
+// total transition time constant in milliseconds
+const int T_transition = 400;
+// motor unspooling time constant in milliseconds
+const int T_unspool = 50;
 
 /* Initializations (should not change)*/
 // number of robot states  (assuming bang-bang control)
@@ -87,13 +91,13 @@ void cycle_through_states (int8_t *cycle, int8_t cycle_size) {
         just_curled[j] = true;
       }
       if (j==3) {
-        delay(50);
+        delay(T_unspool);
         for (int k=0; k<=3; k++) {
           if (state_matrix[k][cycle[i]] == 0) {
             digitalWrite(motor[2*k+1], LOW);
           }
           if (k==3){
-            delay(350);
+            delay(T_transition - T_unspool);
             Serial.println("");
           }
         }
