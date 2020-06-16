@@ -28,3 +28,6 @@ We have parameterized our control code such that different actuator configuratio
 
 ### Code
 The basic code presented [here](BasicMSoRo.ino) enables open-loop control of a motor-tendon actuated robot by cycling through a predetermined input sequence (i.e. locomotion gait). 
+
+#### Flow
+
