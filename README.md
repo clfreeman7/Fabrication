@@ -33,3 +33,8 @@ The basic code presented [here](BasicMSoRo.ino) enables open-loop control of a m
 This basic code was written in the [Arduino IDE](https://www.arduino.cc/en/main/software), a free, open-source software based on C and C++. This allows us to control the direction and timing of the motors by using an Arduino microcontroller.
 
 #### Inputs
+The code requires a minimum of five initial inputs: the number of motors, the motor pins, the desired input cycle, transition time constant, and motor unspooling time constant. 
+##### Number of Motors
+This code works for any number of motors by assuming band-bang control (i.e. the motors are always either on or off with no in-between states). This allows us to label discrete robot states by considering all of the possibleo on/off combinations. If intermidiate states are desired (e.g., half-curled robot limbs), this can be altered in the initializations. 
+##### Motor Pins
+Here, the user can input the digital Arduino pin numbers that are connected to the motor driver inputs. For this to work properly, the motor terminals should be grouped together. For instance, for three motors, the array should be {Motor 1 Pin A, Motor 1 Pin B, Motor 2 Pin A, Motor 2 Pin B, Motor 3 Pin A, Motor 3 Pin B}.
