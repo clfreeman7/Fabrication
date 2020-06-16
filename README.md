@@ -26,18 +26,18 @@ Given our use of "bang-bang control" (where actuators are only either on or off)
 #### Alternative Configruations
 We have parameterized our control code such that different actuator configurations and quanitites do not require significant changes to the code. For a robot with a different number of actuators, simply change the constant parameter in the setup portion of the code. The control code is independent of the morphology or configuration of the robot. Rather, the number of motors determines the number of possible robot states (i.e., the total number of on/off motor combinations) and labels them. The user can then input a desired sequence of on/off combinations to control the robot.
 
-### Code
+## Code
 The basic code presented [here](BasicMSoRo.ino) enables open-loop control of a motor-tendon actuated robot by cycling through a predetermined input sequence (i.e. locomotion gait). 
 
-#### Flow
+### Flow
 This basic code was written in the [Arduino IDE](https://www.arduino.cc/en/main/software), a free, open-source software based on C and C++. This allows us to control the direction and timing of the motors by using an Arduino microcontroller.
 
-#### Inputs
+### Inputs
 The code requires a minimum of five initial inputs: the number of motors, the motor pins, the desired input cycle, transition time constant, and motor unspooling time constant. 
-##### Number of Motors
+#### Number of Motors
 This code works for any number of motors by assuming band-bang control (i.e. the motors are always either on or off with no in-between states). This allows us to label discrete robot states by considering all of the possibleo on/off combinations. If intermidiate states are desired (e.g., half-curled robot limbs), this can be altered in the initializations. 
-##### Motor Pins
+#### Motor Pins
 Here, the user can input the digital Arduino pin numbers that are connected to the motor driver inputs. For this to work properly, the motor terminals should be grouped together. For instance, for three motors, the array should be {Motor 1 Pin A, Motor 1 Pin B, Motor 2 Pin A, Motor 2 Pin B, Motor 3 Pin A, Motor 3 Pin B}.
-##### Desired Input Cycle
-##### Transition Time Constant
-##### Motor Unspooling Time Constant
+#### Desired Input Cycle
+#### Transition Time Constant
+#### Motor Unspooling Time Constant
