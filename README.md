@@ -32,3 +32,4 @@ The basic code presented [here](BasicMSoRo.ino) enables open-loop control of a m
 #### Flow
 This basic code was written in the [Arduino IDE](https://www.arduino.cc/en/main/software), a free, open-source software based on C and C++. This allows us to control the direction and timing of the motors by using an Arduino microcontroller.
 
+#### Inputs
