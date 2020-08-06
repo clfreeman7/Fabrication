@@ -26,6 +26,13 @@ Given our use of "bang-bang control" (where actuators are only either on or off)
 #### Alternative Configruations
 We have parameterized our control code such that different actuator configurations and quanitites do not require significant changes to the code. For a robot with a different number of actuators, simply change the constant parameter in the setup portion of the code. The control code is independent of the morphology or configuration of the robot. Rather, the number of motors determines the number of possible robot states (i.e., the total number of on/off motor combinations) and labels them. The user can then input a desired sequence of on/off combinations to control the robot.
 
+#### Motor Driver Details
+For the TB6643KQ motor driver used in this example, the pins are defined in the datasheet as follows:
+![pins](pins.png)
+
+The code relies on the following input/output logic from the datasheet (H = high/ 1 ; L = low / 0).
+![logic](driver_logic.png)
+
 ## Code
 The basic code presented [here](BasicMSoRo.ino) enables open-loop control of a motor-tendon actuated robot by cycling through a predetermined input sequence (i.e. locomotion gait). 
 
@@ -50,10 +57,12 @@ It is sometimes helpful to add a short period of motor unspooling (reversing the
 ### Setup
 Before uploading a sketch to the Arduino to run the code, the user must first ensure that they have selected the correct port and board. The port name depends on the computer's operating system and which USB port is being used. The selected board must correspond to the Arduino model being used, as shown in the picture below. 
 ![board_setup](setup.png)
+
 Note that newer models or third-party models (such as the Adafruit Feather) require downloading a separate core through the Boards Manager. The Nano 33 IoT core can be downloaded [here](https://www.arduino.cc/en/Guide/NANO33IoT). 
 ### Breadboard
 Although this code will run on a soldered PCB corresponding to the provided circuit schematic, it is often convenient to use a breadboard during early testing. Below is a picture of an example breadboard. 
 ![board](breadboard.jpg)
+
 Note three differences between this breadboard and the circuit schematic:
 1. The motors are not included. 
 2. LEDs and resistors have been added to the input pins of the motor drivers. 
