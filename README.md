@@ -45,3 +45,18 @@ The transition time constant is the total time it takes for the robot to transit
 #### Motor Unspooling Time Constant
 It is sometimes helpful to add a short period of motor unspooling (reversing the motor direction) when trying to uncurl / relax an actuator. If desired, this can be input in milliseconds. If this is not desired, this can be initialized as 0. 
 
+## Testing the Code
+
+### Setup
+Before uploading a sketch to the Arduino to run the code, the user must first ensure that they have selected the correct port and board. The port name depends on the computer's operating system and which USB port is being used. The selected board must correspond to the Arduino model being used, as shown in the picture below. 
+![board_setup](setup.png)
+Note that newer models or third-party models (such as the Adafruit Feather) require downloading a separate core through the Boards Manager. The Nano 33 IoT core can be downloaded [here](https://www.arduino.cc/en/Guide/NANO33IoT). 
+### Breadboard
+Although this code will run on a soldered PCB corresponding to the provided circuit schematic, it is often convenient to use a breadboard during early testing. Below is a picture of an example breadboard. 
+![board](breadboard.jpeg)
+Note three differences between this breadboard and the circuit schematic:
+1. The motors are not included. 
+2. LEDs and resistors have been added to the input pins of the motor drivers. 
+3. The external power supply is not included. 
+
+These changes are to allow the user to test the code without needing to actually use the motors or power supply. The LEDs will light up to indicate that current is flowing through the motor driver. Once the desired code changes have been tested, the user can then add the external power and motors. The LEDs maybe included or removed at this point, as they will not affect the circuit greatly. 
