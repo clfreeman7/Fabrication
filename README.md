@@ -13,8 +13,15 @@ This repository is also used in the following papers:
 - A. N. Mahendran, C. Freeman, A. H. Chang, M. McDougall, P. A. Vela and V. Vikas, "Multi-Gait Locomotion Planning and Tracking for Tendon-Actuated Terrestrial Soft Robot (TerreSoRo)," 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 2542-2549, https://doi.org/10.1109/IROS55552.2023.10341926.
 - C. Freeman, A.N. Mahendran, and V. Vikas, [“Environment-centric learning approach for gait synthesis in terrestrial soft robots,”](https://arxiv.org/pdf/2402.03617) in IEEE Transactions on Robotics (T-RO), 2025.
 
-## Fabrication
+## Overview
+The design and fabrication have undergone countless iterations and improvements. This repository generally details the preliminary design and fabrication as documented in 2019. This consisted of two main designs for: 1) an external Arduino Uno controlled and 2) an embedded Arduino Nano controller. ![The original design](MSoRo_Arduino_Uno.JPG) for the external Arduino Uno is shown below without the hub cap to show the internal mechatronics. 
 
+
+
+The same robot with an embedded Arduino Nano in the hub is shown ![here.](MSoRo_Arduino_Nano.JPG)
+
+Finally, the Arduino Uno design with the hub cap and a tether attached is shown ![here.](MSoRo_With_Hub_Cap.JPG)
+## Fabrication
 ### Mechatronics
 The basic mechatronics for the MSoRo system consist of a microcontroller, DC motors, and motor drivers. The current prototype consists of the following:
 - One (1) [Arduino Uno Rev3](https://store.arduino.cc/usa/arduino-uno-rev3)
@@ -40,10 +47,10 @@ We have parameterized our control code such that different actuator configuratio
 
 #### Motor Driver Details
 For the TB6643KQ motor driver used in this example, the pins are defined in the datasheet as follows:
-![pins](pins.png)
+![pins](Pins.png)
 
 The code relies on the following input/output logic from the datasheet (H = high/ 1 ; L = low / 0).
-![logic](driver_logic.png)
+![logic](Driver_Logic.png)
 
 ## Code
 The basic code presented [here](BasicMSoRo.ino) enables open-loop control of a motor-tendon actuated robot by cycling through a predetermined input sequence (i.e. locomotion gait). 
@@ -68,12 +75,12 @@ It is sometimes helpful to add a short period of motor unspooling (reversing the
 
 ### Setup
 Before uploading a sketch to the Arduino to run the code, the user must first ensure that they have selected the correct port and board. The port name depends on the computer's operating system and which USB port is being used. The selected board must correspond to the Arduino model being used, as shown in the picture below. 
-![board_setup](setup.png)
+![board_setup](Setup.png)
 
 Note that newer models or third-party models (such as the Adafruit Feather) require downloading a separate core through the Boards Manager. The Nano 33 IoT core can be downloaded [here](https://www.arduino.cc/en/Guide/NANO33IoT). 
 ### Breadboard
 Although this code will run on a soldered PCB corresponding to the provided circuit schematic, it is often convenient to use a breadboard during early testing. Below is a picture of an example breadboard. 
-![board](breadboard.jpg)
+![board](Breadboard.jpg)
 
 Note three differences between this breadboard and the circuit schematic:
 1. The motors are not included. 
