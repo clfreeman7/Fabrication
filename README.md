@@ -83,8 +83,8 @@ Before uploading a sketch to the Arduino to run the code, the user must first en
 
 Note that newer models or third-party models (such as the Adafruit Feather) require downloading a separate core through the Boards Manager. The Nano 33 IoT core can be downloaded [here](https://www.arduino.cc/en/Guide/NANO33IoT). 
 ### Breadboard
-Although this code will run on a soldered PCB corresponding to the provided circuit schematic, it is often convenient to use a breadboard during early testing. Below is a picture of an example breadboard. 
-![board](Breadboard.jpg)
+Although this code will run on a soldered PCB corresponding to the provided circuit schematic, it is often convenient to use a breadboard during early testing. Below is a picture of an example breadboard: 
+![board](Breadboard.JPG)
 
 Note three differences between this breadboard and the circuit schematic:
 1. The motors are not included. 
