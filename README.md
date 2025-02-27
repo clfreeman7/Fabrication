@@ -6,7 +6,9 @@ C. Freeman, M. Maynard, and V. Vikas, “Topology and Morphology Design of Spher
 The arXiv version can be accessed [here](https://arxiv.org/abs/2205.00544).  
 
 This repository is also used in the following papers:
-- Freeman, C., Conzola, J., and Vikas, V. (April 28, 2023). ["Topology Design and Optimization of Modular Soft Robots Capable of Homogenous and Heterogenous Reconfiguration."](https://doi.org/10.1115/1.4062265) ASME. J. Comput. Nonlinear Dynam. June 2023; 18(6): 061007. https://doi.org/10.1115/1.4062265
+- Freeman, C., Conzola, J., and Vikas, V. (April 28, 2023). "Topology Design and Optimization of Modular Soft Robots Capable of Homogenous and Heterogenous Reconfiguration." ASME. J. Comput. Nonlinear Dynam. June 2023; 18(6): 061007. https://doi.org/10.1115/1.4062265
+- A. N. Mahendran, C. Freeman, A. H. Chang, M. McDougall, P. A. Vela and V. Vikas, "Multi-Gait Locomotion Planning and Tracking for Tendon-Actuated Terrestrial Soft Robot (TerreSoRo)," 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 2542-2549, https://doi.org/10.1109/IROS55552.2023.10341926.
+- C. Freeman, A.N. Mahendran, and V. Vikas, [“Environment-centric learning approach for gait synthesis in terrestrial soft robots,”](https://arxiv.org/pdf/2402.03617) in IEEE Transactions on Robotics (T-RO), 2025.
 
 ## Fabrication
 
