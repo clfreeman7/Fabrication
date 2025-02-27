@@ -7,6 +7,7 @@ The arXiv version can be accessed [here](https://arxiv.org/abs/2205.00544).
 
 The accompanying Youtube video can be accessed [here](https://www.youtube.com/watch?v=K-ZRhlJ1r1A).
 
+The related GitHub repository that includes MATLAB code to optimize the limb shape for the robot can be found [here](https://github.com/clfreeman7/Design_Optimization).
 
 This repository is also used in the following papers:
 - Freeman, C., Conzola, J., and Vikas, V. (April 28, 2023). "Topology Design and Optimization of Modular Soft Robots Capable of Homogenous and Heterogenous Reconfiguration." ASME. J. Comput. Nonlinear Dynam. June 2023; 18(6): 061007. https://doi.org/10.1115/1.4062265
