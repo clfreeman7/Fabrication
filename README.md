@@ -5,7 +5,7 @@ C. Freeman, M. Maynard, and V. Vikas, “Topology and Morphology Design of Spher
 
 The arXiv version can be accessed [here](https://arxiv.org/abs/2205.00544).  
 
-The accompanying Youtube video can be accessed [here](https://www.youtube.com/watch?v=K-ZRhlJ1r1A).
+The accompanying YouTube video can be accessed [here](https://www.youtube.com/watch?v=K-ZRhlJ1r1A).
 
 The related GitHub repository that includes MATLAB code to optimize the limb shape for the robot can be found [here](https://github.com/clfreeman7/Design_Optimization).
 
