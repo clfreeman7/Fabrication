@@ -1,5 +1,12 @@
 # MSoRo
-This repository documents the design, fabrication, and control of a modular soft robotic system MSoRo capable of reconfiguration into a ball. 
+This repository documents the design, fabrication, and control of a modular soft robotic system MSoRo capable of reconfiguration into a ball. The repository was originally used for "Topology and Morphology Design of Spherically Reconfigurable Homogeneous Modular Soft Robots," as [published in Soft Robotics](https://www.liebertpub.com/doi/10.1089/soro.2021.0125). This paper can be cited as follows:
+
+C. Freeman, M. Maynard, and V. Vikas, “Topology and Morphology Design of Spherically Reconfigurable Homogeneous Modular Soft Robots,” Soft Robotics, vol. 10, Jul. 2022, doi: 10.1089/soro.2021.0125.
+
+The arXiv version can be accessed [here](https://arxiv.org/abs/2205.00544).  
+
+This repository is also used in the following papers:
+- Freeman, C., Conzola, J., and Vikas, V. (April 28, 2023). ["Topology Design and Optimization of Modular Soft Robots Capable of Homogenous and Heterogenous Reconfiguration."](https://doi.org/10.1115/1.4062265) ASME. J. Comput. Nonlinear Dynam. June 2023; 18(6): 061007. https://doi.org/10.1115/1.4062265
 
 ## Fabrication
 
