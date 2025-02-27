@@ -14,13 +14,17 @@ This repository is also used in the following papers:
 - C. Freeman, A.N. Mahendran, and V. Vikas, [“Environment-centric learning approach for gait synthesis in terrestrial soft robots,”](https://arxiv.org/pdf/2402.03617) in IEEE Transactions on Robotics (T-RO), 2025.
 
 ## Overview
-The design and fabrication have undergone countless iterations and improvements. This repository generally details the preliminary design and fabrication as documented in 2019. This consisted of two main designs for: 1) an external Arduino Uno controlled and 2) an embedded Arduino Nano controller. ![The original design](MSoRo_Arduino_Uno.JPG) for the external Arduino Uno is shown below without the hub cap to show the internal mechatronics. 
+The design and fabrication have undergone countless iterations and improvements. This repository generally details the preliminary design and fabrication as documented in 2019. This consisted of two main designs for: 1) an external Arduino Uno controlled and 2) an embedded Arduino Nano controller. The original design for the external Arduino Uno is shown below without the hub cap to show the internal mechatronics:
 
+![Original MSoRo with external Arduino Uno](MSoRo_Arduino_Uno.JPG)
 
+The same robot with an embedded Arduino Nano in the hub is shown below:
+![MSoRo with embedded Aruduino Nano](MSoRo_Arduino_Nano.JPG)
 
-The same robot with an embedded Arduino Nano in the hub is shown ![here.](MSoRo_Arduino_Nano.JPG)
+Finally, the Arduino Uno design with the hub cap and a tether attached is shown here:
 
-Finally, the Arduino Uno design with the hub cap and a tether attached is shown ![here.](MSoRo_With_Hub_Cap.JPG)
+![MSoRo with hub cap covering the internal mechatronics](MSoRo_With_Hub_Cap.JPG)
+
 ## Fabrication
 ### Mechatronics
 The basic mechatronics for the MSoRo system consist of a microcontroller, DC motors, and motor drivers. The current prototype consists of the following:
